@@ -6,7 +6,7 @@ A cute, fast-paced browser arcade game built with **HTML5 Canvas, CSS, and vanil
 
 Once GitHub Pages is enabled, your game will be available at:
 
-`https://YOUR-USERNAME.github.io/coin-dash/`
+`https://rudrashahm-a11y.github.io/coin-dash/`
 
 No server, database, build step, framework, or paid hosting is required.
 
