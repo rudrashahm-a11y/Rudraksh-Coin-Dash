@@ -1,1 +1,42 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Coin Dash</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-shell">
+  <canvas id="game" aria-label="Coin Dash game"></canvas>
+  <div class="hud">
+    <div class="hud-pill">🪙 <span id="score">0</span></div>
+    <div class="hud-pill">❤️ <span id="lives">3</span></div>
+    <div class="hud-pill">⏱️ <span id="time">60</span></div>
+  </div>
+  <div id="startScreen" class="overlay">
+    <div class="card">
+      <div class="logo">COIN DASH</div>
+      <p>Run, collect coins and gems, grab boosts, and dodge the danger!</p>
+      <button id="startBtn">PLAY NOW</button>
+      <div class="help">Desktop: <b>← → / A D</b> move · <b>Space / ↑</b> jump<br>Mobile: use the buttons below</div>
+    </div>
+  </div>
+  <div id="gameOver" class="overlay hidden">
+    <div class="card">
+      <div class="logo">TIME'S UP!</div>
+      <p>Your score</p>
+      <div id="finalScore" class="final-score">0</div>
+      <p id="bestLine"></p>
+      <button id="restartBtn">PLAY AGAIN</button>
+    </div>
+  </div>
+  <div id="mobileControls" class="mobile-controls">
+    <button data-key="left">◀</button>
+    <button data-key="jump">⬆</button>
+    <button data-key="right">▶</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
